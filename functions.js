@@ -38,16 +38,18 @@ findTotalItems()
 
 // Write a function to find the item with the lowest stock quantity.
  
-function getLowestStock() {
-   let minIndex = 0;
-   for (let i = 1; i < quantity.length; i++) {
-     if (quantity[i] < quantity[minIndex]) {
-       minIndex = i;
-     }
-   }
-   return nameItems[minIndex];
- }
- console.log(getLowestStock())
+
+ function getLowest(){
+   let lower = Math.min(...quantity)
+   console.log(lower)
+}
+getLowest()
+
+
+
+
+
+
  
 
 
